@@ -6,6 +6,7 @@
     <body>
         <!-- THIS IS HTML COMMENT -->
         <h1>Life as a Teacher</h1>
+        <a href="" onmouseover="changeAlbert();">Change Albert</a>
         <p>Teaching is a rewarding career if you dont mind putting up with students' stupid questions...</p>
         <div class='block2'>
             <p>Teacher Jokes HAHAHAHA</p>
@@ -21,7 +22,7 @@
             <img src="http://morethanatech.com/wp-content/uploads/2015/07/Teacher-Meme-Answer-Questions.jpg" width="300" height="200">
             <img src="https://static.boredpanda.com/blog/wp-content/uploads/2018/08/teacher-meme-4-5b851941322fc__700.jpg" width="300" height="200">
         </div>
-        <div class="block">
+        <div id="albert" class="block">
             Show this section
         </div>
         <div class="block">
@@ -33,8 +34,14 @@
         alert("Hello world");
         console.log("Hello world");
 
-        //JAVASCRIPT can access parts of the page using DOM
-
+        //JAVASCRIPT can access parts of the page using Document Object Model
+        function changeAlbert()
+        {
+            var block = document.getElementById("albert");
+            block.innerHTML = "<b>ALBERT HAS CHANGED!</b>";
+            block.style.backgroundColor = "purple";
+            block.style.color = "black";
+        }
 
     </script> 
 </html>
