@@ -7,6 +7,9 @@
         <!-- THIS IS HTML COMMENT -->
         <h1>Life as a Teacher</h1>
         <a href="" onmouseout="changeAlbertBack();" onmouseover="changeAlbert();">Change Albert</a>
+        <div id="albert" class="block">
+            Show this section
+        </div>
         <p>Teaching is a rewarding career if you dont mind putting up with students' stupid questions...</p>
         <div class='block2'>
             <p>Teacher Jokes HAHAHAHA</p>
@@ -22,9 +25,7 @@
             <img src="http://morethanatech.com/wp-content/uploads/2015/07/Teacher-Meme-Answer-Questions.jpg" width="300" height="200">
             <img src="https://static.boredpanda.com/blog/wp-content/uploads/2018/08/teacher-meme-4-5b851941322fc__700.jpg" width="300" height="200">
         </div>
-        <div id="albert" class="block">
-            Show this section
-        </div>
+
         <div class="block">
             Show this section
         </div>
@@ -41,6 +42,7 @@
             block.innerHTML = "<b>ALBERT HAS CHANGED!</b>";
             block.style.backgroundColor = "purple";
             block.style.color = "black";
+            block.style.visibility = 'visible';
         }
 
         function changeAlbertBack()
@@ -49,6 +51,7 @@
             block.innerHTML = "Show this section";
             block.style.backgroundColor = "gray";
             block.style.color = "white";
+            block.style.visibility = 'hidden';
         }
 
     </script> 
