@@ -6,7 +6,7 @@
     <body>
         <!-- THIS IS HTML COMMENT -->
         <h1>Life as a Teacher</h1>
-        <a href="" onmouseover="changeAlbert();">Change Albert</a>
+        <a href="" onmouseout="changeAlbertBack();" onmouseover="changeAlbert();">Change Albert</a>
         <p>Teaching is a rewarding career if you dont mind putting up with students' stupid questions...</p>
         <div class='block2'>
             <p>Teacher Jokes HAHAHAHA</p>
@@ -41,6 +41,14 @@
             block.innerHTML = "<b>ALBERT HAS CHANGED!</b>";
             block.style.backgroundColor = "purple";
             block.style.color = "black";
+        }
+
+        function changeAlbertBack()
+        {
+            var block = document.getElementById("albert");
+            block.innerHTML = "Show this section";
+            block.style.backgroundColor = "gray";
+            block.style.color = "white";
         }
 
     </script> 
